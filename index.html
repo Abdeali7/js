@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="" id="book-form">
+        <label for="title">Book Name:</label><br>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="author">Author:</label><br>
+        <input type="text" id="author" name="author" required><br><br>
+
+        <label for="pages">Pages:</label><br>
+        <input type="number" id="pages" name="pages" required><br><br>
+
+        <fieldset>
+            <legend>Have you read the book:</legend>
+
+            <label>
+                <input type="radio" name="read" value="Read" required checked />
+                Yes
+            </label>
+
+            <label>
+                <input type="radio" name="read" value="Not Yet Read" required />
+                No
+            </label>
+        </fieldset><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <div class="library" id="library">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
